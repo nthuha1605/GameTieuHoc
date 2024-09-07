@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Website_MasterPage.master.cs" Inherits="Website_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Sổ liên lạc điện tử Việt Nhật</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="web_VietNhatKids_css/base.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/admin_images/logo_mamnon.png" />
+    <link href="web_VietNhatKids_css/SoLienLacDienTu/Buttom.css" rel="stylesheet" />
+    <%--<link href="web_VietNhatKids_css/TrangChu.css" rel="stylesheet" />--%>
+   
+    <script src="admin_js/sweetalert.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        a:hover {
+            text-decoration-line: none;
+        }
+
+        .footer_kids {
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: #ffff;
+            text-align: center;
+        }
+
+            .footer_kids img {
+                width: 72%;
+                margin: 0 2%;
+            }
+
+        .footer_kids_menu {
+            display: flex;
+            flex-direction: column;
+            width: 27%;
+            font-size: 11px;
+            align-items: center;
+        }
+
+            .footer_kids_menu span {
+                color: black;
+                margin-left: -4px;
+                font-weight: 600;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <div class="section-footer">
+            </div>
+        </asp:ContentPlaceHolder>
+        <footer>
+            <div class="footer_kids">
+                <a class="footer_kids_menu" href="/">
+                    <img src="../image_SoLienLacDienTu/icon/logo.png" />
+                    <span>Tranh chủ</span>
+                </a>
+                <a class="footer_kids_menu" href="tel:0334798366">
+                    <img src="../image_SoLienLacDienTu/icon/goi.png" />
+                    <span>Liên hệ</span>
+                </a>
+                <a class="footer_kids_menu" href="/vietnhatkids-thu-gop-y">
+                    <img src="../image_SoLienLacDienTu/icon/homthu.png" />
+                    <span>Hòm thư góp ý</span>
+                </a>
+                <a class="footer_kids_menu" href="/vietnhatkids-dia-chi">
+                    <img src="../image_SoLienLacDienTu/icon/map.png" />
+                    <span>Cơ sở</span>
+                </a>
+                <a class="footer_kids_menu" href="/vietnhatkids-thong-tin-ca-nhan-cua-be">
+                    <img src="../image_SoLienLacDienTu/icon/tim.png" />
+                    <span>Thông tin trẻ</span>
+                </a>
+            </div>
+        </footer>
+    </form>
+</body>
+
+</html>
